@@ -178,7 +178,26 @@ details[open] summary::before {
   color: var(--muted);
   line-height: 1.6;
 }
-  
+
+.dash-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dash-list li {
+  position: relative;
+  padding: 3px 0 3px 18px;   /* same indent as the paper titles */
+  margin-bottom: 6px;        /* same spacing as the papers */
+}
+
+.dash-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--details-marker);
+}
+
 @media screen and (max-width: 800px) {
     .row {
     gap: 0;
@@ -210,7 +229,7 @@ details[open] summary::before {
 
   <div class="row">
     <div class="left">
-      <h2><span class="lnr lnr-enter"></span></h2>
+      <h2><span class="lnr lnr-home"></span></h2>
       <p>I'm the Louis Skolnick Postdoctoral Research Associate in Philosophy at <a href="https://philosophy.princeton.edu" target="_blank">Princeton</a>.</p>
       <p>I received my PhD from <a href="https://as.nyu.edu/departments/philosophy.html">NYU</a>, my BPhil from <a href="https://philosophy.site.ox.ac.uk/home">Oxford</a>, and my BA from <a href="https://www.bowdoin.edu/philosophy/index.html">Bowdoin</a>.</p>
       <p>My CV is <a href="Aidan-B-Penn-CV.pdf" target="_blank">here</a>.</p>
@@ -249,63 +268,16 @@ details[open] summary::before {
       </details>
 
 
-      <h2 class="section-heading"><span class="lnr lnr-graduation-hat"></span></h2>
-
-<!-- <details>
-  <summary>Introduction to Moral Philosophy. Primary Instructor, Princeton (Spring 2027).</summary>
-  <div class="abstract">
-    Description: an introduction to moral philosophy.
-    Topics included consequentialism vs. non-consequentialism, theories of welfare, aggregation, moral luck, free will, contractualism, abortion, death, and vegetarianism.
-  </div>
-</details> -->
-
-<details>
-  <summary>Epistemology. Primary Instructor, NYU (Summer 2024).</summary>
-  <div class="abstract">
-    Description: an introduction to contemporary approaches to epistemology.
-    Topics included skepticism, the structure of justification, the analysis of knowledge, the structure of justification, and internalism vs. externalism. 
-  </div>
-</details>
-
-<details>
-  <summary>The Nature of Values. Primary Instructor, NYU (Summer 2024).</summary>
-  <div class="abstract">
-    Description: An introduction to contemporary approaches to metaethics.
-    Topics included naturalist realism, non-naturalist realism, divine command theory, error theory, expressivism, constructivism, feminist approaches to metaethics, and Buddhist anti-realism.
-  </div>
-</details>
-
-<details>
-  <summary>The Meaning of Life. Teaching Assistant, NYU (Spring 2023).</summary>
-  <div class="abstract">
-    Description: An overview of historical and contemporary views of the meaning of life.
-    Readings included work by Plato, Aristotle, Sophocles, Epicurus, Cicero, Diogenes Laertius, Epictetus, <i>Gilgamesh</i>, The <i>Dhammapada</i>, <i>The Bhagavad Gita</i>, <i>The Gospels</i>, Shakespeare, Nietzsche, Kafka, Gandhi, de Beauvoir, Sartre, Julia Annas, Robert Nozick, Mihalyi Csizkszentmihalyi, Susan Wolf, Zadie Smith, Victor Frankl, James Baldwin, and Ursula K. Le Guin.
-  </div>
-</details>
-
-<details>
-  <summary>Ethics. Teaching Assistant, NYU (Fall 2022).</summary>
-  <div class="abstract">
-    Description: An introduction to normative ethics.
-    Topics included Aristotle's <i>Nicomachean Ethics</i>, Kant's <i>Groundwork</i>, Sidgwick's <i>The Methods of Ethics</i>, aggregation, rights, duties of beneficence, and contractualism.
-  </div>
-</details>
-
-<details>
-  <summary>Ethics and Society. Teaching Assistant, NYU (Spring 2022).</summary>
-  <div class="abstract">
-    Description: An overview of selected topics in applied ethics.
-    Topics included skepticism about morality, consequentialism and its critics, desire and imagination, the use of force, identity and solidarity, and living with injustice.
-  </div>
-</details>
-
-<details>
-  <summary>Political Philosophy. Teaching Assistant, NYU (Fall 2021).</summary>
-  <div class="abstract">
-    Description: An introduction to political philosophy.
-    Topics included political authority, civil disobedience, and democratic (dis)enfranchisement.
-  </div>
-</details>
+      <h2 class="section-heading"><span class="lnr lnr-users"></span></h2>
+      
+      <ul class="dash-list">
+        <li>Epistemology. Primary Instructor, NYU (Summer 2024).</li>
+        <li>The Nature of Values. Primary Instructor, NYU (Summer 2022).</li>
+        <li>The Meaning of Life. Teaching Assistant, NYU (Spring 2023).</li>
+        <li>Ethics. Teaching Assistant, NYU (Fall 2022).</li>
+        <li>Ethics and Society. Teaching Assistant, NYU (Spring 2022).</li>
+        <li>Political Philosophy. Teaching Assistant, NYU (Fall 2021).</li>
+      </ul>
 
     </div>
 
