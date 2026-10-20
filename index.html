@@ -171,10 +171,16 @@ details[open] summary::before {
   color: var(--muted);
   line-height: 1.6;
 }
-
+  
 @media screen and (max-width: 800px) {
+    .row {
+    gap: 0;
+  }
   .left, .middle, .right {
     width: 100%;
+  }
+  .section-heading {
+    margin-top: 28px;
   }
   .dark-toggle {
     width: 32px;
@@ -184,6 +190,7 @@ details[open] summary::before {
     display: none;
   }
 }
+  
 </style>
 <title>Aidan B. Penn</title>
 </head>
